@@ -1,7 +1,11 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  Link,
+} from "react-router-dom";
 
-function App() {
+function Root() {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,8 +22,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Link to="cont"><button>cont</button></Link>
     </div>
   );
 }
 
-export default App;
+export default Root;
