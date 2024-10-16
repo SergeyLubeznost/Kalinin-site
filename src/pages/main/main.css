@@ -21,13 +21,13 @@
 }
 
 .main-title{
+    font-family: 'Gotham';
     margin-top: 9%;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 3.45rem;
     line-height: 85.25px;
     margin-left: 0.2%;
-    letter-spacing: 0.18rem;
 }
 .main-btn-group{
     width: 31.3%;
@@ -42,7 +42,8 @@
     width: 45%;
     height: 3.8rem;
     border: none;
-    font-size: 1.3rem;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 23.54px;
     border-radius: 10px;

@@ -2,6 +2,7 @@ import React from 'react';
 import logo  from '../../image/Group 59.svg'
 import find  from '../../image/find.svg'
 import phone  from '../../image/phone.svg'
+import user from '../../image/user.svg'
 import favorite  from '../../image/favorite.svg'
 import basket  from '../../image/Vector (1).svg'
 import './header.css';
@@ -85,6 +86,7 @@ function Header (){
                 </div>
 
                 <div className="icon-group">
+                <img src={user} alt="" />
                 <img src={favorite} alt="" />
                 <img src={basket} alt="" />
                 </div>

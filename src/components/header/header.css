@@ -6,18 +6,6 @@
     color: black;
 }
 
-ul{
-    list-style-type:none;
-    width: 430px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-
 header{
     display: flex;
     justify-content: space-between;
@@ -27,20 +15,46 @@ header{
 }
 
 .logo{
-    width: 91px;
-    height: 83.92px;
-    margin-top: 8px;
+    width: 6%;
+  
 }
+
+
+ul{
+    list-style-type:none;
+    width: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -3.8%;
+
+}
+
+li{
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 23.54px;
+    margin-top: 2%;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
 
 header > form {
     width: 302px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0.3%;
 }
 header > form > input{
     width: 100%;
     height: 30px;
+    margin-left: -6%;
 
     border: none;
     border-bottom: #8E8E8E 1px solid;
@@ -48,9 +62,18 @@ header > form > input{
 header > form > input:focus{
     outline: none;
 }
+header > form > input::placeholder{
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 23.54px;
+    margin-top: 2%;
+}
 
 header > form > button{
-    margin-left: -11%;
+    position: relative;
+    left: -4%;
+
     background-color: rgba(255, 255, 255,0);
     border: none;
 
@@ -62,6 +85,17 @@ header > form > button{
     align-items: center;
     width: 204px;
     height: 24px;
+    position: relative;
+    left: -2%;
+}
+.phone-group > p{
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 23.54px;
+}
+.phone-group > img{
+    width: 10.4%;
 }
 
 .icon-group{
