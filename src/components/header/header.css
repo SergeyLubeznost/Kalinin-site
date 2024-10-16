@@ -22,8 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 185px;
-    padding-right: 185px;
+    padding: 0 9.3% 0 9.6%;
     height:100px;
 }
 

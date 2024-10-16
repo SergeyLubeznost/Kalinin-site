@@ -1,0 +1,57 @@
+.section-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    background: url("./image-main/Rectangle 10_11zon.webp") no-repeat;
+    width: 100%;
+    height: 60rem;
+    padding: 0 9.3% 0 9.6%;
+}
+.logo-main{
+    height: 7.2%;
+    margin-top: 6%;
+}
+
+.logo-main img{
+    width: 20%;
+}
+
+.main-title{
+    margin-top: 9%;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 3.45rem;
+    line-height: 85.25px;
+    margin-left: 0.2%;
+    letter-spacing: 0.18rem;
+}
+.main-btn-group{
+    width: 31.3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 0.6%;
+}
+
+.main-btn-catalog,.main-btn-contact{
+    width: 45%;
+    height: 3.8rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 23.54px;
+    border-radius: 10px;
+}
+.main-btn-catalog{
+    background-color: var(--main-bg-color);
+    color: #FFFFFF;
+}
+.main-btn-contact{
+    color:  var(--main-bg-color);
+    background-color: #FFFFFF;
+}
