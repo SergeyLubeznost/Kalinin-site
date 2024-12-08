@@ -1,0 +1,63 @@
+@media (min-width: 969px) and (max-width: 1770px)  {
+    .main-container{
+        height: 86vh;
+        padding: 0 2.3% 0 2.3%!important;
+    }
+    .logo-main{
+        margin-top: 60px;
+    }
+    .logo-main img{
+        width: 250px;
+    }
+
+    .main-title{
+        margin-top: 76.16px;
+        font-size: 45px;
+        line-height: 67.25px;
+    }
+    .main-btn-group{
+        width: 476px;
+        margin-top: 56px;
+    }
+    
+    .main-btn-catalog,.main-btn-contact{
+        width: 187.6px;
+        height: 61px;
+     
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+    .guarantees{
+       
+        padding: 0 2.3% 0 2.3%!important;
+    }
+
+    .guarantees-item{
+        width: 383px;
+    }
+    
+     .guarantees-item img{
+        width: 95px;
+        margin-right: 28px;
+    } 
+    
+    
+    .guarantees-item div > h3{
+        font-size: 20px;
+        line-height: 27.8px;
+    }
+    .guarantees-item div > p{
+        font-size: 16px;
+        line-height: 25.94px;
+    }
+    .position-guarantees-mid-div{
+        position: relative;
+        right: 8%;
+        bottom: -5px;
+    }
+    .position-guarantees-last-img{
+        position: relative;
+        right: -3.2%;
+        bottom: 1px;;
+    }
+}

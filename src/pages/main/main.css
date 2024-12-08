@@ -1,0 +1,132 @@
+
+.section-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    background: url("./image-main/Rectangle10_11zon.webp") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 943px;
+    padding: 0 9.3% 0 9.6%;
+}
+.logo-main{
+    height: 70,84px;
+    margin-top: 6%;
+}
+
+.logo-main img{
+    width: 309px;
+}
+
+.main-title{
+    font-family: 'Gotham';
+    margin-top: 135.16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 85.25px;
+    margin-left: 3.3px;
+}
+.main-btn-group{
+    width: 486px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 77px;
+    margin-left: 0.6%;
+}
+
+.main-btn-catalog,.main-btn-contact{
+    width: 219.6px!important;
+    height: 3.8rem!important;
+    border: none!important;
+    font-family: "Montserrat"!important;
+    font-size: 1.2rem!important;
+    font-weight: 500!important;
+    line-height: 23.54px!important;
+    border-radius: 10px!important;
+    letter-spacing: -1px!important;
+}
+.main-btn-catalog{
+    background-color: var(--main-bg-color);
+    color: #FFFFFF;
+}
+.main-btn-contact{
+    color:  var(--main-bg-color)!important;
+    background-color: #FFFFFF!important;
+    text-transform: none !important;
+}
+
+.guarantees{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 11%;
+}
+.guarantees-container{
+    margin-top: 4.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.guarantees-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 441px;
+}
+
+ .guarantees-item img{
+    width: 115px;
+    margin-right: 32px;
+} 
+
+
+.guarantees-item div > h3{
+    font-family: 'Gotham';
+    color: #333333;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38.8px;
+    margin-bottom: 0px;
+}
+.guarantees-item div > p{
+    font-family: "Montserrat";
+    color: #858585;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27.94px;
+    margin-top: 0px;
+}
+
+.position-guarantees{
+    position: relative;
+    right: 0%;
+    bottom:7px;
+}
+.position-guarantees-mid-img{
+    position: relative;
+    right: 7.5%;
+    bottom:0px;
+}
+.position-guarantees-mid-div{
+    position: relative;
+    right: 8%;
+    bottom: 5px;
+}
+.position-guarantees-last-img{
+    position: relative;
+    right: -6.2%;
+    bottom: 1px;;
+}
+.position-guarantees-last-div{
+    position: relative;
+    right: -1%;
+    bottom: 22px;
+}
+
