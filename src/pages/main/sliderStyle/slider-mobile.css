@@ -21,7 +21,7 @@
 
     .other__con-slide2{
       position: relative;
-      top: 272px;
+      top: 370px;
       height: 143px;
       left: 0px;
     }
@@ -37,9 +37,7 @@
     }
 
     .other__con-slide2 button{
-      width: 183px!important;
-      height: 42px!important;
-      left: 70%!important;
+      display: none;
     }
 
     .slide3{
@@ -51,7 +49,7 @@
 
     .other__con-slide3{
       position: relative;
-      top: 283px;
+      top: 370px;
       height: 143px;
       left: 0px;
     }
@@ -62,9 +60,7 @@
       left: 32%!important;
     }
     .other__con-slide3 button{
-      width: 183px!important;
-      height: 42px!important;
-      left: 70%!important;
+      display: none;
     }
     .semiElipse{
       right: -41%;
@@ -96,7 +92,7 @@
       .other-container h3{
         font-size: 20px;
         line-height: 30.5px;
-        bottom: 148%;
+        bottom: 222%;
         left: 36%;
         text-align: center;
         width: 261px;
@@ -106,18 +102,13 @@
       .other-container p{
         font-size: 16px;
         line-height: 31.04px;
-        bottom: 153.2%;
+        bottom: 225.2%;
         left: 35%;
         z-index: 4;
       }
       .other-container button {
-        font-size: 14px;
-        line-height: 21.47px;
-        width: 183px!important;
-        height: 42px!important;
-        bottom: 62%;
-        left: 72%;
-        z-index: 4;
+      
+        display: none;
       }
 
       .size-banner{

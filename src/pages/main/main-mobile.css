@@ -47,65 +47,36 @@
     .guarantees-container{
         margin-top: 12.5%;
      
-        height: 307px;
+        min-height: 307px;
+        width: 100%;
       
         flex-direction: column;
         justify-content: flex-start;
  
     }
     .guarantees-item{
-        width: 324px;
-        height: 81px;
+        width: 100%;
+        min-height: 81px;
         margin-bottom: 9%;
 
     }
 
-    .guarantees-item div > h3{
+    .guarntes__title{
         margin-bottom: 10px;
-        font-size: 16px;
-        line-height: 21.73px;
+        font-size: 16px!important;
+        line-height: 0px;
     }
-    .guarantees-item div > p{
-        font-size: 14px;
+    .accordion__paragraph{
+        font-size: 14px!important;
         line-height: 21.73px;
     }
     .guarantees-item img{
         width: 56px;
-        margin-right: 25px;
+        margin-right: 0px;
     } 
-    .position-guarantees-img{
-        position: relative;
-        right: 0.85%;
-        bottom: 7px;
-    }
-    .position-guarantees{
-        position: relative;
-        right: 0.4%;
-        bottom: 17%;
-    }
-  
-    .position-guarantees-mid-img{
-        position: relative;
-        right: 0.85%;
-        bottom: 24px;
-    }
-    .position-guarantees-mid-div{
-        position: relative;
-        right: 1%;
-        bottom: 38%;
-
-    }
-    .position-guarantees-last-img{
-        position: relative;
-        right: 0.85%;
-        bottom: 45px;
-    }
     .position-guarantees-last-div{
-        position: relative;
-        right: 0;
-        bottom: 0;
         width: 100%;
-        margin-top: -32%;
+        margin-top: 0%;
     }
     
 }

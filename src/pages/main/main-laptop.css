@@ -31,33 +31,4 @@
        
         padding: 0 2.3% 0 2.3%!important;
     }
-
-    .guarantees-item{
-        width: 383px;
-    }
-    
-     .guarantees-item img{
-        width: 95px;
-        margin-right: 28px;
-    } 
-    
-    
-    .guarantees-item div > h3{
-        font-size: 20px;
-        line-height: 27.8px;
-    }
-    .guarantees-item div > p{
-        font-size: 16px;
-        line-height: 25.94px;
-    }
-    .position-guarantees-mid-div{
-        position: relative;
-        right: 8%;
-        bottom: -5px;
-    }
-    .position-guarantees-last-img{
-        position: relative;
-        right: -3.2%;
-        bottom: 1px;;
-    }
 }
