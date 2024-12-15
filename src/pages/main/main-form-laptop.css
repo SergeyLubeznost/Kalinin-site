@@ -1,8 +1,8 @@
-@media (min-width: 969px) and (max-width: 1440px) {
+@media (min-width: 969px) and (max-width: 1800px) {
     .main__form-section {
         padding: 0 2.3% 0 2.3% !important;
         margin-top: 0px;
-
+width: 90%;
 
     }
 

@@ -91,6 +91,8 @@ height: 16px !important;
     background: transparent;
     cursor: pointer;
     z-index: 10;
+    outline: none; /* Убираем обводку при фокусе */
+    -webkit-tap-highlight-color: transparent; 
   }
   
   .custom-next-button {

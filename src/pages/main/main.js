@@ -4,6 +4,7 @@ import './main-laptop.css'
 import "./main-slider.css"
 import "./main-tablet.css"
 import "./sliderStyle/slider-tablet.css"
+import "./slider-bestseller-laptop1500.css"
 import "./sliderStyle/slider-mobile.css"
 import "./sliderStyle/slider-laptop.css"
 import "./main-mobile.css"
@@ -27,6 +28,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -54,7 +56,6 @@ import data from "./data.js"
 import FormDialogModal from "../../components/main-dialog/main-modal.js"
 
 function Main() {
-
     const [swiperInstance, setSwiperInstance] = useState(null);
     const CustomNextButton = ({ onClick }) => {
         return (
@@ -294,6 +295,9 @@ function Main() {
 
             <section className="section-bestseller">
             <h2>Бестселлеры</h2>
+            <div>
+        </div>
+
             <div className="bestseller-container">
            
             <img className="bigElipse" src={smallElipse} alt="" />

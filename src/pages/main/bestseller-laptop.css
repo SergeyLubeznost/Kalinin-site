@@ -1,4 +1,4 @@
-@media (min-width: 969px) and (max-width: 1770px)  {
+@media (min-width: 969px) and (max-width: 1440px)  {
     .section-bestseller{
         padding: 0 2.3% 0 2.3% !important;
         height: 930px;
@@ -11,12 +11,12 @@
     }
 
     .card-bestseller{
-        width:366px;
+        width:367px;
         height: 532px;
     }
     
     .card-bestseller img{
-        width:366px;
+        width:367px;
     height: 295px;
     border-radius: 15px 15px 0 0;
     }

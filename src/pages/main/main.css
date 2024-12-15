@@ -87,6 +87,8 @@
 
  .guarantees-item img{
     width: 115px;
+    align-self: flex-start;
+
 } 
 
 
@@ -117,6 +119,8 @@
 .position-guarantees-mid-img{
     position: relative;
     bottom:0px!important;
+    align-self: flex-start;
+
 }
 .position-guarantees-mid-div{
     position: relative;
@@ -125,6 +129,8 @@
 }
 .position-guarantees-last-img{
     position: relative;
+    align-self: flex-start;
+
 }
 .position-guarantees-last-div{
     position: relative;
