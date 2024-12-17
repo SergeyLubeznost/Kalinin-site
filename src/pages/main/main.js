@@ -16,6 +16,8 @@ import "./main-form.css"
 import "./main-form-tablet.css"
 import "./main-form-mobile.css"
 import "./main-form-laptop.css"
+import "./modal-form-style/modal-form-desktop.css"
+import "./modal-form-style/modal-form-mobile.css"
 
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -53,10 +55,15 @@ import smallElipse from "./image-main/bestseller-img/Ellipse 20.svg";
 import telega from "./image-main/telega.svg"
 import data from "./data.js"
 
+import closeModal from "../../components/main-dialog/closeImg.svg"
+import telegramModal from "./image-main/telega.svg"
+
 import FormDialogModal from "../../components/main-dialog/main-modal.js"
 
 function Main() {
     const [swiperInstance, setSwiperInstance] = useState(null);
+
+
     const CustomNextButton = ({ onClick }) => {
         return (
           <button className="custom-next-button" onClick={onClick}>
@@ -74,6 +81,8 @@ function Main() {
         );
       };
 
+      const [open, setOpen] = useState(true);
+
     return (
         <main>
             <section className="section-main">
@@ -84,9 +93,31 @@ function Main() {
                     <h1 className="main-title">ГРИМЁРНЫЕ СТОЛЫ <br />И ЗЕРКАЛА ДЛЯ ВАС</h1>
                     <div className="main-btn-group">
                         <button className="main-btn-catalog">Каталог</button>
-                        <FormDialogModal className={"main-btn-contact"}/>
+                        <Button className="main-btn-contact" variant="contained" onClick={()=> setOpen(true)}>Связаться</Button> 
                     </div>
+
+                    <FormDialogModal active={open}  setActive={setOpen}>
+                      <div className="modal__form">
+                        <div className="modal__form__header">
+                        <img src={closeModal} alt="close" onClick={()=> setOpen(false)}/>
+                        </div>
+                        <p className="modal__form__title">
+                        Оставьте <span style={{ fontWeight: 'bold', color: '#EA899A'}}>заявку</span>, и мы <br/>свяжемся с вами в ближайшее время
+                        </p>
+                        <div className="modal__form__main">
+                        <img src={telegramModal} alt="" />
+                          <form >
+                            <input className="modal__form__input" type="text" placeholder="Введите имя"/>
+                            <input className="modal__form__input" type="tel" placeholder="Введите телефон"/>
+                            <Button className="modal__form__button" variant="contained">Отправить</Button> 
+                          </form>
+                        </div>
+                      </div>
+
+
+                    </FormDialogModal>
                 </div>
+              
             </section>
             <section className="guarantees">
                 <div className="guarantees-container">

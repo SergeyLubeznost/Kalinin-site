@@ -1,72 +1,34 @@
-import * as React from 'react';
+import { useEffect } from 'react';
 import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogTitle from '@mui/material/DialogTitle';
-import TextField from '@mui/material/TextField';
 
 import "./main-modal.css";
 import "./main-modal-mobile.css";
-import close from "./closeImg.svg"
-import telegram from "../../pages/main/image-main/telega.svg"
 
 
-export default function FormDialogModal({ className }) {
-    const [open, setOpen] = React.useState(false);
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
+export default function FormDialogModal({ active, setActive, children }) {
+    useEffect(() => {
+        if (active) {
+            // Запоминаем ширину скроллбара
+            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+            document.body.style.overflow = 'hidden';
+            document.body.style.paddingRight = `${scrollBarWidth}px`; // Устанавливаем паддинг
+        } else {
+            document.body.style.overflow = 'auto';
+            document.body.style.paddingRight = '0'; // Убираем паддинг
+        }
 
-    const handleClose = () => {
-        setOpen(false);
-    };
-
+        // Очистка эффекта
+        return () => {
+            document.body.style.overflow = 'auto';
+            document.body.style.paddingRight = '0'; // Убираем паддинг
+        };
+    }, [active]);
     return (
-        <React.Fragment>
-            <Button className={className} variant="outlined" onClick={handleClickOpen}>
-                Связаться
-            </Button>
-            <Dialog
-    className='dialog__modal'
-    open={open}
-    onClose={handleClose}
-    aria-labelledby="alert-dialog-title"
-    aria-describedby="alert-dialog-description"
->
-    <DialogTitle id="alert-dialog-title" className='close__dialog-container'>
-        <Button className="close__dialog" variant="text" onClick={handleClose}>
-            <img src={close} alt="Закрыть" />
-        </Button>
-    </DialogTitle>
-    <DialogContent>
-        <h2 className='title__form'>Оставьте <span> свои данные</span>, и мы с вами свяжемся</h2>
-        <div className='dialog__container'>
-            <img src={telegram} alt="Telegram" />
-            <div className="main__dialog-inputGroup">
-                <TextField
-                    id="outlined-name"
-                    label="Имя"
-                    variant="outlined"
-                    className="main__dialog-input"
-                />
-                <TextField
-                    id="outlined-phone"
-                    label="Телефон"
-                    type="tel"
-                    className="main__dialog-input"
-                />
-            </div>
+      <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
+        <div className={active ? "modal__content active" : "modal__content"} onClick={e => e.stopPropagation()}>
+            {children}
         </div>
-    </DialogContent>
-    <DialogActions className='dialog__button-container'>
-        <Button className='dialog__button' onClick={handleClose} autoFocus>
-            Отправить
-        </Button>
-    </DialogActions>
-</Dialog>
-
-        </React.Fragment>
+      </div>
     );
 }

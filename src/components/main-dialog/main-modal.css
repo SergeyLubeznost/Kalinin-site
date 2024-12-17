@@ -1,121 +1,45 @@
-.css-10d30g3-MuiPaper-root-MuiDialog-paper {
-    width: 584px!important;
-    height: 491px!important;
-    border-radius: 26px!important;
-}
-
-.css-kw13he-MuiDialogContent-root {
-    padding: 0px 0px!important;
-}
-
-.close__dialog-container{
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255 255 255 / 0.1); /* Цвет фона с прозрачностью */
+    backdrop-filter: blur(10px); /* Эффект размытого стекла */
+    -webkit-backdrop-filter: blur(10px); /* Для поддержки в WebKit */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
     display: flex;
-    justify-content: end;
-}
-
-.close__dialog{
-    width: 29px;
-    height: 29px;
-    left: 14px;
-}
-
-.dialog__content__main-container{
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
-.title__form{
-    font-family: 'Gotham';
-    font-weight: 700;
-    font-size: 25px;
-    width: 498px;
-    text-align: center;
-    line-height: 37.5px;
-    margin-top: 1px;
+.modal:hover,
+.modal:active,
+.modal:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* Поддерживаем тот же фон */
+    outline: none; /* Убираем обводку при фокусе */
+}
+
+.modal.active{
+    opacity: 1;
+/* transform: scale(1); */
+pointer-events:all;
 
 }
 
-
-.title__form span{
-   color: var(--main-bg-color);
+.modal__content{
+   
+    border-radius: 26px;
+    background-color: #fff;
+    transform: scale(0.5);
+    transition: all 175ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor:auto;
 }
 
-.dialog__container{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-.dialog__container img{
-    width: 245px;
-    height: 203px;
-    margin-left: -118px;
-    margin-top: 36px;
-}
-.main__dialog-inputGroup{
-    display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
-        height: 69%;
-        justify-content: center;
-        padding-left: 33px;
-        margin-top: 35px;
-
-}
-.main__dialog-inputGroup .css-1ll44ll-MuiOutlinedInput-notchedOutline{
-    border-width: 0!important;
-}
-.main__dialog-inputGroup .css-h9e54m-MuiInputBase-root-MuiOutlinedInput-root{
-   height: 55px;
-}
-
-.main__dialog-input{
-    border: 1px solid #ea899a!important;
-    border-radius: 10px;
-    width: 310px;
-    height: 55px;
-    margin-bottom: 36px !important;
-}
-
-.main__dialog-input label{
-    font-family: 'M-l';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27.9px;
-    letter-spacing: 1%;
-    color: #616161!important;
-    background-color: white;
-    height: 25px!important;
-}
-
-
-.dialog__button-container{
-    display: flex!important;
-    justify-content: center!important;
-    align-items: flex-start!important;
-}
-.dialog__button{
-    width: 194px;
-    height: 53px;
-    border-radius: 10px!important;
-    background-color: #ea899a!important;
-    color: #FFFF!important;
-    font-family: 'G-l'!important;
-    font-weight: 400!important;
-    font-size: 18px!important;
-    line-height: 17.23px!important;
-   text-transform: none!important;
-   box-shadow: 0px 8px 18px 0 #ea899a;
-   bottom: 55px;
-}
-
-.css-1cennmq-MuiBackdrop-root-MuiDialog-backdrop{
-    background-color: rgba(255 255 255 / 0.1)!important; /* Цвет фона с прозрачностью */
-    backdrop-filter: blur(10px)!important; /* Эффект размытого стекла */
-    -webkit-backdrop-filter: blur(10px)!important; /* Для поддержки в WebKit */
+.modal__content.active{
+    transform: scale(1);
 }
