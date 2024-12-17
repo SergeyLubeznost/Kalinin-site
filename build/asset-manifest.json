@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d57a615d.css",
-    "main.js": "/static/js/main.ac2f13bc.js",
+    "main.css": "/static/css/main.126d788b.css",
+    "main.js": "/static/js/main.fb90b339.js",
     "static/js/453.3e375d93.chunk.js": "/static/js/453.3e375d93.chunk.js",
     "static/media/Group17.png": "/static/media/Group17.9d99e3f5449de59c8a76.png",
     "static/media/Group 14.png": "/static/media/Group 14.e7b8b209e214eb498e06.png",
@@ -44,12 +44,12 @@
     "static/media/like.svg": "/static/media/like.f6f64adce528dfbd066a9da22850c3f5.svg",
     "index.html": "/index.html",
     "static/media/telega.svg": "/static/media/telega.a00f20d0a54594f3190060c30c08adb1.svg",
-    "main.d57a615d.css.map": "/static/css/main.d57a615d.css.map",
-    "main.ac2f13bc.js.map": "/static/js/main.ac2f13bc.js.map",
+    "main.126d788b.css.map": "/static/css/main.126d788b.css.map",
+    "main.fb90b339.js.map": "/static/js/main.fb90b339.js.map",
     "453.3e375d93.chunk.js.map": "/static/js/453.3e375d93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d57a615d.css",
-    "static/js/main.ac2f13bc.js"
+    "static/css/main.126d788b.css",
+    "static/js/main.fb90b339.js"
   ]
 }
