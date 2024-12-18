@@ -81,7 +81,7 @@ function Main() {
         );
       };
 
-      const [open, setOpen] = useState(true);
+      const [open, setOpen] = useState(false);
 
     return (
         <main>
@@ -102,7 +102,7 @@ function Main() {
                         <img src={closeModal} alt="close" onClick={()=> setOpen(false)}/>
                         </div>
                         <p className="modal__form__title">
-                        Оставьте <span style={{ fontWeight: 'bold', color: '#EA899A'}}>заявку</span>, и мы <br/>свяжемся с вами в ближайшее время
+                        Оставьте <span style={{ fontWeight: 'bold', color: '#EA899A'}}>свои данные</span>,<br className="space2"/> и мы с вами свяжемся
                         </p>
                         <div className="modal__form__main">
                         <img src={telegramModal} alt="" />

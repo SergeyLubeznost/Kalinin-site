@@ -1,7 +1,7 @@
-.modal{
+.modal {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255 255 255 / 0.1); /* Цвет фона с прозрачностью */
+    background-color: rgba(255, 255, 255, 0.1); /* Цвет фона с прозрачностью */
     backdrop-filter: blur(10px); /* Эффект размытого стекла */
     -webkit-backdrop-filter: blur(10px); /* Для поддержки в WebKit */
     position: fixed;
@@ -12,24 +12,27 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none; /* Отключаем события указателя по умолчанию */
     transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
+
 }
 
-.modal:hover,
-.modal:active,
-.modal:focus {
-    background-color: rgba(255, 255, 255, 0.1); /* Поддерживаем тот же фон */
+.modal.active {
+    opacity: 1;
+    pointer-events: all; /* Включаем события указателя, когда модалка активна */
+}
+
+.modal.active:hover,
+.modal.active:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* Нет изменения фона при наведении или фокусе */
     outline: none; /* Убираем обводку при фокусе */
 }
 
-.modal.active{
-    opacity: 1;
-/* transform: scale(1); */
-pointer-events:all;
-
+/* Убираем стиль для :active */
+.modal.active:active {
+    background-color: rgba(255, 255, 255, 0.1); /* Поддерживаем тот же фон */
 }
+
 
 .modal__content{
    
@@ -42,4 +45,10 @@ pointer-events:all;
 
 .modal__content.active{
     transform: scale(1);
+}
+
+@media (max-width: 539px) {
+    .modal__content{
+        border-radius: 38px;
+    }
 }

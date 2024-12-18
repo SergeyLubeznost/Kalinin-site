@@ -23,6 +23,10 @@
     margin-top: 0;
 }
 
+.space2{
+    display: block;
+}
+
 .modal__form__main{
     display: flex;
     justify-content: space-between;
@@ -49,11 +53,12 @@
     left: 24%;
 }
 .modal__form__input{
+    outline: none; 
     box-sizing: border-box;
     height: 55px;
     width: 310px;
     border-radius: 10px;
-    border: 1px solid #EA899A;
+    border: 1px solid rgba(222, 209, 209, 1) ;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -61,8 +66,8 @@
     margin-bottom: 42px;
     background-color: #FAFAFA;
 }
-.modal__form__input:focus{
-    border: 1px solid #EA899A;
+.modal__form__input:focus {
+    border: 1px solid #EA899A!important;
 }
 
 .modal__form__button{
